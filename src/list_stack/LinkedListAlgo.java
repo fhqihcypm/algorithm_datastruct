@@ -1,3 +1,5 @@
+package list_stack;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -240,32 +242,14 @@ public class LinkedListAlgo {
         Node node2 = new Node(2, node3);
         Node head = new Node(1, node2);  
 
-        // Node result = LinkedListAlgo.reverse_Iterative(head);
+        // list_stack.Node result = list_stack.LinkedListAlgo.reverse_Iterative(head);
         // while (result != null) {
         //     System.out.println(result.data);
         //     result = result.next;
         // }
         System.out.println(head);
-//        System.out.println(LinkedListAlgo.removeNthFromEnd_2(head, 2));
+//        System.out.println(list_stack.LinkedListAlgo.removeNthFromEnd_2(head, 2));
         System.out.println(LinkedListAlgo.swapPairs(head));
     }
 
-    public static class Node {
-        private int data;
-        private Node next;
-
-        public Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-
-        public int getData() {
-            return this.data;
-        }
-
-        @Override
-        public String toString() {
-            return "data = " + this.data;
-        }
-    }
 }
