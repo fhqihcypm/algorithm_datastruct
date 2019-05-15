@@ -52,9 +52,9 @@ public class LinkedListAlgo {
             return head;
         }
         
-        Node previous = reverse_Recursive(head);
-        previous.next.next = previous;
-        previous.next = null;
+        Node previous = reverse_Recursive(head.next);
+        head.next.next = head;
+        head.next = null;
         return previous;
     }
 
@@ -249,7 +249,7 @@ public class LinkedListAlgo {
         // }
         System.out.println(head);
 //        System.out.println(list_stack.LinkedListAlgo.removeNthFromEnd_2(head, 2));
-        System.out.println(LinkedListAlgo.swapPairs(head));
+        System.out.println(LinkedListAlgo.reverse_Recursive(head));
     }
 
 }

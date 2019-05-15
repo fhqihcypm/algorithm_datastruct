@@ -135,7 +135,6 @@ public class BinarySearch {
                 else low = mid + 1;
             }
         }
-        HashMap s;
         return -1;
     }
 
